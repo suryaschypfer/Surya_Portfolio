@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading-screen">
+            <div class="loading-words">
+                <h2 class="home-active home-active-first">Hello<div class="dot"></div></h2>
+                <h2 class="home-active">Bonjour<div class="dot"></div></h2>
+                <h2 class="home-active">नमस्ते<div class="dot"></div></h2>
+                <h2 class="home-active">Ciao<div class="dot"></div></h2>
+                <h2 class="home-active">Olá<div class="dot"></div></h2>
+                <!-- <h2 class="home-active jap">おい<div class="dot"></div></h2> -->
+                <h2 class="home-active">Hallå<div class="dot"></div></h2>
+                <!-- <h2 class="home-active">Guten tag<div class="dot"></div></h2> -->
+                <h2 class="home-active-last">Hallo<div class="dot"></div></h2>
+            </div>
+
+            <div class="rounded-div-wrap bottom" style="height: 0vh;">
+                <div class="rounded-div"></div>
+            </div>
+        </div>
+    </div>
+
+ 
+    
+
+    <!-- Main Home Page -->
+    <div id="home-page" class="home-page" style="display: none;">
+    <header class="header">
+        <a href="#home" class="logo">Surya Sai Kumar
+            <span>Narayana</span>
+        </a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class = "navbar">
+            <a href = "#home" class="active">Home</a>
+            <a href = "#education">Education & Experience</a>
+            <!-- <a href="Experience"></a> -->
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class ="home" id="home">
+        <div class=""home-content>
+            <h1 style="font-size: 7rem; font-weight: 700; margin-top: 1.5rem; line-height: 1.5;">Hi, It's <span>Surya</span></h1>
+            <h3 style="font-size: 3rem; margin-bottom: 1rem; margin-top: 1rem;" class="text-animation">I'm a <span></span></h3>
+            <p style="font-size: 2rem; font-weight: 500; line-height: 1.8; max-width: 1000px;">
+                A Software Engineer with 3+ years of experience in backend development using Java, SQL, AWS, and Spring Boot. I hold a Master’s degree in Computer Science from the University at Buffalo and am passionate about building scalable software solutions and solving complex challenges.
+            </p>
+                        
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/surya-sai-kumar-narayana-59a765163/" target="_blank" ><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <!-- <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a> -->
+                
+            </div>
+
+            <div class = "btn-group">
+                <a href = "https://drive.google.com/file/d/1zA1_lBwe9JidI8XjfzYW1bIza9trdJgN/view?usp=drive_link" target="_blank" class="btn">Resume</a>
+                <a href = "#contact" class="btn">Contact</a>
+            </div>
+        
+        </div>
+            <div class="home-img">
+                <img src = "DSC_0958.JPG" alt="">
+            </div>
+       
+    </section>
+
+    <section class ="education" id="education">
+        <h2 class="heading"> Education and Experience</h2>
+
+        <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; position: relative;"class=""timeline-items>
+            <div style="position: absolute; width: 5px; height: 100%; background-color: var(--main-color); left: calc(50% - 1px);"></div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <img src="download1.png" alt="Timeline Image 1">
+                </div>
+                    <div class="timeline-date">June 2016- May 2020</div>
+                    <div class="timeline-content">
+                        <h3>Bachelors in ECE</h3>
+                        <p>
+                            VIT University, Chennai, India
+                        </p>
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <img src="download.jpeg" alt="Timeline Image 1">
+                </div>
+                    <div class="timeline-date">Apr 2018 - June 2018</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer Intern</h3>
+                        <p>
+                            ECIL, Hyderabad, India
+                        </p>
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <img src="download.png" alt="Timeline Image 1">
+                </div>
+                    <div class="timeline-date"> Sep 2020 - Dex 2022</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <p>
+                            Manhattan Associates, India
+                        </p>
+                        <!-- <p>• Architected 20+ Java workflows, achieving 100% error reduction for the Transportation Management System.</p>
+<p>• Developed a REST API service, handling over 1 million requests daily, enhancing system integration and streamlining communication between modules by 50%.</p>
+<p>• Collaborated with 10 Business Analysts to boost the Transportation Management System, impacting all features.</p>
+<p>• Mentored juniors and offered functional knowledge guidance, enhancing team efficiency and code quality by 40%.</p>
+<p>• Managed system stability during high-traffic events for 100,000 users using real-time monitoring with Kibana and Grafana.</p>
+<p>• Engineered a Selenium and Appium mobile automation framework, automating 50 key tests, cutting manual effort by 90% and reduced bugs by 70%.</p>
+<p>• Developed 50+ scripts with Cucumber for the Customer Workflow Validation project, streamlining execution processes.</p>
+<p>• Orchestrated data transmission via Manhattan’s Integration Framework and RabbitMQ, improving message delivery efficiency.</p> -->
+
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <img src="download (1).png" alt="Timeline Image 1">
+                </div>
+                    <div class="timeline-date">Jan 2023 - June 2024</div> 
+                    <div class="timeline-content">
+                        <h3>MS Computer Science</h3>
+                        <p>
+                            University at Buffalo, NY, USA
+                        </p>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+
+        <div class="projects-container">
+            <div class="project-box">
+                <div class="project-info">
+                    <h4> Carbon Calculator (React, JavaScript, AWS)</h4>
+                    <p>
+                        I created over 50 wireframes using Figma and developed the 'Offset Carbon' app with React, MySQL, and JavaScript, which resulted in a 70% boost in backend speed. I deployed the app on AWS for secure and scalable hosting, configuring the admin panel to handle queries from 1 million customers. Additionally, I built analytics features within the admin app, providing detailed carbon data for over 100,000 users, categorized by age and zip code.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>E Commerce Microprojects Architecture (Spring Boot, Kafka, Eureka, RabbitMQ)</h4>
+                    <p>
+                        I designed a scalable microprojects architecture using Spring Boot and MongoDB for Product, Order, and Inventory projects. I implemented Kafka and RabbitMQ for asynchronous data exchange, developing a stateless Notification project to alert over 300 users. Additionally, I configured independent deployment and integrated Netflix Eureka for fault-tolerant and efficient project communication.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>Machine Learning-Driven Flight Experience Enhancement (Python, PySpark, Machine Learning)</h4>
+                    <p>
+                        I developed a predictive model for flight prices using EDA and Machine Learning on 500,000 data points, improving prediction accuracy by 25%. By applying techniques like regression and decision trees, I achieved an R2 score of 0.98 with the Random Forest regressor. Additionally, I leveraged PySpark and Python for map-reduce operations, gaining insights into the efficiency of Spark’s parallel processing across various dataset sizes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>Movie Database Management System with Power BI Insights (SQL, JavaScript, PowerBI)</h4>
+                    <p>
+                        I developed a comprehensive movie database using Python for data cleansing, E/R diagram modeling, and data normalization. I optimized SQL queries for efficient data interactions, improving consistency by normalizing four tables. Additionally, I created a Power BI dashboard highlighting key metrics, including movie revenues for 500+ titles, leading to a 20% profit increase for production houses.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="skills" id="skills" style="margin-bottom: 0px;">
+        <h2 class="heading"> Skills</h2>
+        <div class="container">
+            <div class="row" id="skillsContainer">
+                <div class="bar">
+                    <div class="info">
+                        <i class='bx bxl-java' style="font-size: 60px;"></i>
+                        <span>Java</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class='bx bxl-python' style="font-size: 60px;"></i>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+
+                <div class="bar">
+                    <div class="info">
+                        <i class='bx bxl-javascript' style="font-size: 60px;"></i>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+
+                <div class="bar">
+                    <div class="info">
+                        <i class='bx bxl-aws' style="font-size: 60px;" ></i>
+                        <span>AWS</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class='bx bxs-data' style="font-size: 60px;" ></i>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <!-- <div class="bar">
+                    <div class="info">
+                        <i class='bx bxl-c-plus-plus' style="font-size: 60px;" ></i>
+                        <span>C++</span>
+                    </div>
+                </div> -->
+
+                <div class="bar">
+                    <div class="info">
+                        <i class='bx bxl-jquery' style="font-size: 60px;"></i>
+                        <span>JQuery</span>
+                    </div>
+                </div>
+
+
+                <div class="bar">
+                    <div class="info">
+                        <i class='bx bxl-html5' style="font-size: 60px;"></i>
+                        <span>HTML</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class='bx bxl-css3' style="font-size: 60px;"></i>
+                        <span>CSS</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class='bx bxl-spring-boot' style="font-size: 60px;"></i>
+                        <span>SpringBoot</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class='bx bxl-git' style="font-size: 60px;"></i>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact" style="margin-top: 0px;" >
+        <p class="heading">GET IN TOUCH</p>
+        <h2 class="heading">Contact</h2>
+    
+        <!-- Flex container for form and video -->
+        <div class="contact-content">
+
+            <form action="https://formspree.io/f/xwpebqnk" method="POST">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                        <input type="submit" value="Send Message" class="btn" target="_blank">
+                    </div>
+                </div>
+            </form>
+            
+    
+            <!-- Video container -->
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="44350-438661984_medium.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-linkedin' ></i></box-icon></a>
+            <a href="#"><i class='bx bxl-github' ></i></a>
+        </div>
+
+        <ul class="list">
+
+            <li>
+                <a href="#">About Me</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+         <p class="copyright">
+            Surya Narayana | All rights reserved
+        </p>
+   </footer> -->
+</div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
